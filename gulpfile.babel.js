@@ -30,6 +30,7 @@ gulp.task('clean',() => {
 
 gulp.task('js', () =>
   gulp.src(['src/**/*.js'])
+  .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
   .pipe(babel())
   .pipe(gulpif(isBuild, uglify()))
   .pipe(gulp.dest('dist'))
