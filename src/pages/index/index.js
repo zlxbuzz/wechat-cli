@@ -15,12 +15,6 @@ Page({
     })
   },
   async getData(){
-    await app.ajaxGet('matchH5/detail',{matchID: 3998713102401616});
-    await app.ajaxGet('matchH5/detail',{matchID: 3998713102401616});
-    await app.ajaxGet('matchH5/detail',{matchID: 3998713102401616});
-    await app.ajaxGet('matchH5/detail',{matchID: 3998713102401616});
-    await app.ajaxGet('matchH5/detail',{matchID: 3998713102401616});
-    await app.ajaxGet('matchH5/detail',{matchID: 3998713102401616});
   },
   onLoad: function () {
     this.getData();

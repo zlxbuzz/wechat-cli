@@ -1,0 +1,20 @@
+<view class="flex">
+  <text>姓名：</text>
+  <input class="flex-input" placeholder="姓名" auto-focus/>
+</view>
+<view class="flex">
+  <text>性别：</text>
+  <picker class="flex-input" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+<view  class="flex">
+  <text>是否同意：</text>
+  <switch class="flex-input" bindchange="switch2Change"/>
+</view>
+<view  class="flex">
+  <text>上传成绩：</text>
+  <text class="flex-input" bindtap="upload">上传</text>
+</view>
